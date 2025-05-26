@@ -12,10 +12,14 @@ import 'package:children_police/features/start_calling/presentation/views/start_
 class DialectSelectionScreen extends StatelessWidget {
   static const routeName = '/dialect-selection';
 
-     DialectSelectionScreen({super.key});
+  DialectSelectionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final filteredDialects = Dialects.dialects.entries
+        .where((entry) => entry.key != 'girls')
+        .toList();
+
     return Scaffold(
       body: GradientBackground(
         colors: [
@@ -31,8 +35,8 @@ class DialectSelectionScreen extends StatelessWidget {
               child: Column(
                 children: [
                   PoliceBadge(
-                    color: AppColors.blueDark600, image: Assets.logo ,
-                   
+                    color: AppColors.blueDark600,
+                    image: Assets.logo,
                   ),
                   SizedBox(height: AppSizes.paddingLarge),
                   StyledText(
@@ -55,9 +59,9 @@ class DialectSelectionScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: AppSizes.paddingLarge),
                 child: ListView.builder(
-                  itemCount: Dialects.dialects.length,
+                  itemCount: filteredDialects.length,
                   itemBuilder: (context, index) {
-                    final entry = Dialects.dialects.entries.elementAt(index);
+                    final entry = filteredDialects[index];
                     final dialectData = entry.value;
 
                     return DialectCard(
@@ -96,4 +100,3 @@ class DialectSelectionScreen extends StatelessWidget {
     );
   }
 }
-
