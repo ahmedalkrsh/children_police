@@ -1,3 +1,4 @@
+import 'package:children_police/core/constants/images.dart';
 import 'package:children_police/core/widgets/bolice_bage.dart';
 import 'package:children_police/features/home/data/dialects.dart' show Dialects;
 import 'package:children_police/features/home/presentation/widgets/dailect_card.dart';
@@ -30,8 +31,8 @@ class DialectSelectionScreen extends StatelessWidget {
               child: Column(
                 children: [
                   PoliceBadge(
-                    color: AppColors.blueDark600,
-                    icon: Icons.shield,
+                    color: AppColors.blueDark600, image: Assets.logo ,
+                   
                   ),
                   SizedBox(height: AppSizes.paddingLarge),
                   StyledText(

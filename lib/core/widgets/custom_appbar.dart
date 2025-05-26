@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:children_police/core/constants/sizes.dart';
 
-// شريط تطبيق مخصص مع زر رجوع وعنوان اختياري
 class CustomAppBar extends StatelessWidget {
   final String? title;
   final Color? titleColor;

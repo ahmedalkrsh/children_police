@@ -18,4 +18,6 @@ class AppColors {
   static const grey600 = Color(0xFF757575);
   static const white = Colors.white;
   static const black26 = Colors.black26;
+  static const burble = Color.fromARGB(255, 240, 113, 187);
+  static const burbleDark = Color.fromARGB(255, 241, 70, 170);
 }

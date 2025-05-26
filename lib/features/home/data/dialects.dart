@@ -21,6 +21,12 @@ class Dialects {
       'color': Colors.orange,
       'gradient': [AppColors.orangeLight400, AppColors.orangeDark600],
     },
+      'girls': {
+      'name': 'البنات',
+      'icon': Icons.favorite, // Changed to a more appropriate icon
+      'color': Colors.purple,
+      'gradient': [AppColors.burble, AppColors.burbleDark], // Assuming you have purple colors
+    },
   };
 
 
