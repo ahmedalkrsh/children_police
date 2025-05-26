@@ -2,7 +2,7 @@ import 'package:children_police/core/constants/colors.dart';
 import 'package:children_police/core/constants/images.dart';
 import 'package:children_police/core/constants/sizes.dart';
 import 'package:children_police/core/widgets/bolice_bage.dart';
-import 'package:children_police/core/widgets/custom_appbar' show CustomAppBar;
+import 'package:children_police/core/widgets/custom_appbar.dart';
 import 'package:children_police/core/widgets/gradient_background.dart';
 import 'package:children_police/core/widgets/gradient_button.dart';
 import 'package:children_police/core/widgets/styled_text.dart';

@@ -1,6 +1,6 @@
 import 'package:children_police/core/constants/images.dart';
 import 'package:children_police/core/widgets/bolice_bage.dart';
-import 'package:children_police/core/widgets/custom_appbar';
+import 'package:children_police/core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:children_police/core/constants/colors.dart';
 import 'package:children_police/core/constants/sizes.dart';
