@@ -29,9 +29,10 @@ class CallController {
       CurvedAnimation(parent: pulseController, curve: Curves.easeInOut),
     );
 
-    waveAnimation = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(parent: waveController, curve: Curves.easeOut),
-    );
+    waveAnimation = Tween<double>(
+      begin: 0,
+      end: 1,
+    ).animate(CurvedAnimation(parent: waveController, curve: Curves.easeOut));
   }
 
   Future<void> startCall(String dialect) async {
