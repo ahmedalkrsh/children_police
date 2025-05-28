@@ -36,7 +36,7 @@ class CallController {
 
   Future<void> startCall(String dialect) async {
     if (!isPlaying) {
-      await player.play(AssetSource('audio/$dialect.m4a'));
+      await player.play(AssetSource('audio/$dialect.mp3'));
       isPlaying = true;
     }
   }

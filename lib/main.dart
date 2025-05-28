@@ -1,4 +1,4 @@
-import 'package:children_police/features/home/presentation/views/dialect_screen.dart';
+import 'package:children_police/features/calmChild/presentation/views/calm_shild_view.dart';
 import 'package:children_police/features/intro/presentation/views/intro_view.dart';
 import 'package:flutter/material.dart';
 import 'package:children_police/core/constants/colors.dart';
@@ -24,7 +24,7 @@ class ChildPoliceApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home:  GenderSelectionScreen(),
+      home:  ChildTypeSelectionScreen(),
     );
   }
 }
