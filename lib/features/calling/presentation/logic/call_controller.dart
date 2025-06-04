@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class CallController {
   final TickerProvider vsync;
   final AudioPlayer player = AudioPlayer();
+  final AudioPlayer policePlayer = AudioPlayer();
 
   late AnimationController pulseController;
   late AnimationController waveController;
@@ -37,6 +38,8 @@ class CallController {
 
   Future<void> startCall(String dialect) async {
     if (!isPlaying) {
+      await policePlayer.play(AssetSource('audio/police.mp3'));
+      await policePlayer.setVolume( 0.5);
       await player.play(AssetSource('audio/$dialect.mp3'));
       isPlaying = true;
     }
